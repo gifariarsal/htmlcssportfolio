@@ -1,0 +1,238 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+/* header start */
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(255, 215, 186, 0.32);
+    padding: 16px 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social img {
+    height: 32px;
+    margin-left: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav>a {
+    margin-right: 24px;
+}
+
+nav>a:hover {
+    color: #FF9D4A;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* header end */
+
+section {
+    padding: 64px 100px;
+    border-bottom: 1px solid #FFD7BA;
+}
+
+/* about start */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 24px;
+    height: 100vh;
+    padding: 0;
+    margin: 0px 100px;
+}
+
+#about img {
+    width: 400px;
+}
+
+#about p {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    color: #979797;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.btn {
+    background-color: #FF9D4A;
+    color: #fff;
+    padding: 8px 24px;
+    border: 2px solid #FF9D4A;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    filter: opacity(0.9);
+}
+
+/* about end */
+
+/* skill start */
+#skill > h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+#skill > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#skill img {
+    height: 100px;
+}
+/* skill end */
+
+/* contact start */
+
+#contact > h2 {
+    margin: 0px;
+    font-size: 24px;
+}
+
+#contact > p {
+    font-size: 20px;
+}
+
+.contact-detail {
+    margin-top: 40px;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #FEC89A;
+    padding: 32px 24px;
+    border-radius: 20px;
+}
+
+form>h3 {
+    text-align: center;
+    font-size: 24pxpx;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    margin-top: 24px;
+    grid-template-areas:
+        "name subject"
+        "email phone"
+        "message message";
+}
+
+form>.btn-form {
+    cursor: pointer;
+    padding: 10px 0px;
+    font-weight: 500;
+}
+
+form>.btn-form:active {
+    background-color: #F27F1C;
+    border: 2px solid #F27F1C;
+}
+
+#input-name {
+    grid-area: name;
+}
+
+#input-subject {
+    grid-area: subject;
+}
+
+#input-email {
+    grid-area: email;
+}
+
+#input-phone {
+    grid-area: phone;
+}
+
+#input-message {
+    grid-area: message;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+}
+
+.input-group label {
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.input-group input:focus {
+    border-bottom: 2px solid #FEC89A;
+}
+/* contact end */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF9D4A;
+    height: 60px;
+}
+
+footer > p {
+    color: #fff;
+    font-size: 16px;
+}
